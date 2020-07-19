@@ -21,12 +21,13 @@ var trigger = new ScrollMagic.Scene({
     triggerElement: "#about",
     triggerHook: 0.25
 })
-    .addIndicators({
-        colorTrigger: "white",
-        colorStart: "white",
-        colorEnd: "white",
-        indent: 10
-    })
+    //*THIS INDICATORS WILL BE IN THE RIGTH SIDE OF THE WEBSITE, WE CAN SEE THEM IF WE INCLUDE THIS CODE:
+    // .addIndicators({
+    //     colorTrigger: "white",
+    //     colorStart: "white",
+    //     colorEnd: "white",
+    //     indent: 10
+    //})
     .setTween(tl)
     .addTo(controller);
 
@@ -46,12 +47,14 @@ var trigger = new ScrollMagic.Scene({
     triggerElement: "#skills",
     triggerHook: 0.25
 })
-    .addIndicators({
-        colorTrigger: "white",
-        colorStart: "white",
-        colorEnd: "white",
-        indent: 10
-    })
+        //*THIS INDICATORS WILL BE IN THE RIGTH SIDE OF THE WEBSITE, WE CAN SEE THEM IF WE INCLUDE THIS CODE:
+    // .addIndicators({
+    //     colorTrigger: "white",
+    //     colorStart: "white",
+    //     colorEnd: "white",
+    //     indent: 10
+    //})
+
     .setTween(ta)
     .addTo(controller);
 
@@ -59,6 +62,7 @@ var trigger = new ScrollMagic.Scene({
 //We are adding a trigger to create the animation perfectly//
 var controller = new ScrollMagic.Controller();
 var ta = new TimelineMax();
+
 ta.staggerFrom(".bar-html", 1.5, {
     scale: 0,
     cycle: {
@@ -66,18 +70,21 @@ ta.staggerFrom(".bar-html", 1.5, {
     }
 
 });
+
 var trigger = new ScrollMagic.Scene({
     triggerElement: "#skills",
     triggerHook: 0.25
 })
-    .addIndicators({
-        colorTrigger: "white",
-        colorStart: "white",
-        colorEnd: "white",
-        indent: 10
-    })
+      //*THIS INDICATORS WILL BE IN THE RIGTH SIDE OF THE WEBSITE, WE CAN SEE THEM IF WE INCLUDE THIS CODE:
+    // .addIndicators({
+    //     colorTrigger: "white",
+    //     colorStart: "white",
+    //     colorEnd: "white",
+    //     indent: 10
+    //})
     .setTween(ta)
-    .addTo(controller);
+    .addTo(controller)
+   
 
 
 //We are creating the animation on the class name called = Work//
@@ -96,12 +103,13 @@ var trigger = new ScrollMagic.Scene({
     triggerElement: "#work",
     triggerHook: 0.25
 })
-    .addIndicators({
-        colorTrigger: "white",
-        colorStart: "white",
-        colorEnd: "white",
-        indent: 10
-    })
+     //*THIS INDICATORS WILL BE IN THE RIGTH SIDE OF THE WEBSITE, WE CAN SEE THEM IF WE INCLUDE THIS CODE:
+    // .addIndicators({
+    //     colorTrigger: "white",
+    //     colorStart: "white",
+    //     colorEnd: "white",
+    //     indent: 10
+    //})
     .setTween(ta)
     .addTo(controller);
 
@@ -120,23 +128,14 @@ var trigger = new ScrollMagic.Scene({
     triggerElement: "#contact",
     triggerHook: 0.25
 })
-    .addIndicators({
-        colorTrigger: "white",
-        colorStart: "white",
-        colorEnd: "white",
-        indent: 10
-    })
+        //*THIS INDICATORS WILL BE IN THE RIGTH SIDE OF THE WEBSITE, WE CAN SEE THEM IF WE INCLUDE THIS CODE:
+    // .addIndicators({
+    //     colorTrigger: "white",
+    //     colorStart: "white",
+    //     colorEnd: "white",
+    //     indent: 10
+    //})
     .setTween(ta)
     .addTo(controller);
-//adding clicks tags to Work id//
-var click = document.getElementsByClassName('work-category');
-var button = document.getElementById('animation');
 
-click.onclick = function(){
-    if(button.className == "open"){
 
-    }
-    else{
-        
-    }
-}

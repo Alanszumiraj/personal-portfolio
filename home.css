@@ -115,7 +115,7 @@ text a:hover::before{
     height: 100%;
 
 }
-/*img*/
+
 .about{
     height: 100vh;
     margin-top: 100px;
@@ -206,64 +206,101 @@ div[class^='bar-']{
     margin: 2.7px;
 }
 .bar-html{
-    width: 100px;
+    width: 590px;
     animation-duration:5s;
     animation-name: ease ;
 
 }
+.bar-html-italian{
+    width: 500px;
+    animation-duration:5s;
+    animation-name: ease-in ;
+}
+    @keyframes ease-in {
+        from{
+            width:0px;
+        }
+        to{
+            width:500px;
+        }
+    }
+
+
 @keyframes ease {
     from{
         width:0px;
     }
     to{
-        width: 100px;
+        width: 590px;
     }
 }
 
-
-
-
-
-
-.work-category button{
-    text-transform: capitalize;
-    border: 2px solid  #ED5565;
-    padding:16px 35px;
-    border-radius: 50px;
-    color:  #ED5565;
-    font-size: 1.1rem;
-    letter-spacing:1px;
-    background-color: #252527;
+#work{
+    display: flex;
+   flex-direction: row;
+   
 }
 
-div[class^='category-']{
-    margin-top: 50px;
-    display: grid;
-     grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
-    grid-gap:20px;
-    }
+.work-img{
+    height: 400px;
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    background-image: url(./img/Screen\ Shot\ 2020-07-15\ at\ 14.27.40.png);
+    background-size: cover;
+    margin-top: 250px;
+    margin-left: -400px;
+}
+.work-img a{
+     height: 400px;
+    width: 550px;
+}
 
-.work a{
-    justify-self: center;
-    position:relative;
-    display: inline-block;
 
+.work-img2{
+    background-image: url(./img/Screen\ Shot\ 2020-07-15\ at\ 14.43.18.png) ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 550px;
+    margin-top: 250px;
+    margin-left: 10px;
+  
 }
-.work-category .active{
-    background-color: #ED5565;
+
+.work-img2 a{
+     height: 400px;
+    width: 550px;
 }
-button.active{
-    color:#fff
-}
-div.hideCategory{
-    display: none;
-}
-.showCategory{
-    display: block;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contact{
     margin-top:50px;
 }
+
 form input,
 form textarea{
     display:block;
